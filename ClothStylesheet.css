@@ -1,0 +1,230 @@
+        @import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+        *{
+            margin: 0;
+            
+        }
+        .navtop{
+            font-family: 'Kenia', sans-serif;
+        }
+        nav{
+            background-color:#99B2B7;
+            padding: 20px;
+        }
+        .navi
+        {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .navtop,ul,li{
+            display: inline-block;
+        }
+        #Search{
+            display: inline-block;
+            width: 250px;
+            height: 20px;
+            display: inline;
+            margin-left: 29%;
+        }
+        .navtop{
+            font-size: xx-large;
+        }
+        ul{
+            font-size:larger;
+        }
+        li{
+            font-size: 16px;
+            transition: transform 0.2s;
+            padding: 5px;
+        }
+        li:hover{
+            cursor:pointer;
+            color:red;
+            transform: scale(1.3); 
+        }
+        .popup-container{
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 3px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .popup-container:target {
+            display: block;
+            }
+            .coupen{
+        background-color:rgb(98, 124, 116);
+            height: 100px;
+        margin-top: 10px;
+        }
+        .offimg{
+            float:left;
+        }
+        .diw{
+            text-align: center;
+            margin-left:125px;
+            display:inline;
+            font-size:xx-large; 
+            color:white;
+        }
+        .categories h1{
+        margin-top: 20px;
+        background-color: #6e95b5;
+        }
+
+        .Timing{
+            background-color:burlywood;
+            width: 100;
+            height:80px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        .offerzone{
+            padding:10px;
+            margin-left: 30px;
+        }
+        .box1{
+            margin-top: 50px;;
+        text-align: center;
+        width: 350px;
+        height: 400px;
+        margin-left: 20px;
+        display: inline-block;
+        }
+        .slides{
+            margin-top:30px;
+            margin-bottom: 10px;
+        }
+        .slider-container {
+            margin-top: 90px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+        }
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+        .footer{
+            text-align: center;
+            background-color: black;
+            color: aliceblue;
+            padding:20px;
+            word-spacing: 1 px;
+            position:absolute;
+        }
+        .box1 {
+            --b: 4px;
+            --s: 60px; 
+            --g: 10px; 
+            --c: #6e95b5;   
+            padding: calc(var(--b) + var(--g));
+            background-image:
+            conic-gradient(from  90deg at top    var(--b) left  var(--b),#0000 25%,var(--c) 0),
+            conic-gradient(from -90deg at bottom var(--b) right var(--b),#0000 25%,var(--c) 0);
+            background-position:
+            var(--_p,0%) var(--_p,0%),
+            calc(100% - var(--_p,0%)) calc(100% - var(--_p,0%));
+            background-size: var(--s) var(--s);
+            background-repeat: no-repeat;
+            cursor: pointer;
+            transition: 
+            background-position .2s var(--_i,.2s), 
+            background-size .2s calc(.2s - var(--_i,.2s));
+        }
+        .box1.alt {
+            background-image:
+            conic-gradient(from 180deg at top    var(--b) right var(--b),#0000 25%,var(--c) 0),
+            conic-gradient(from   0deg at bottom var(--b) left  var(--b),#0000 25%,var(--c) 0);
+            background-position:
+            calc(100% - var(--_p,0%)) var(--_p,0%),
+            var(--_p,0%) calc(100% - var(--_p,0%));
+        }
+        .box1:hover {
+            background-size: calc(100% - var(--g)) calc(100% - var(--g));
+            --_p: calc(var(--g)/2);
+            --_i: 0s;
+            box-shadow: 0 0  20px rgba(15, 199, 212, 0.5);
+        }
+        .denimbox{
+            margin-top: 20px;;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            width: 350px;
+            height: 400px;
+            margin-left: 30px;
+            display: inline-block;
+            margin-bottom: 50px;
+            border-style:groove;
+            transition: transform 0.2s;
+        }
+        .denimbox:hover{
+            cursor:pointer;
+            transform: scale(1.1);
+            color:rgb(35, 0, 68);
+            box-shadow: 0 0  20px rgba(37, 74, 77, 0.5);
+        }
+        .data{
+            display: inline-block;
+        }
+        marquee{
+        background-color: #FD6965;
+        color:antiquewhite;
+        height: 30px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-top: 20px;
+        padding-top:10px;
+
+        }
+        marquee b{
+        font-family: 'Kenia', sans-serif;
+        color:gold;
+        animation: blink 0.8s step-start infinite;
+        }
+        .video h1{
+             font-family: 'Kenia', sans-serif;
+             color:#6e95b5;
+             animation: blink 1s step-start infinite;
+        }
+        @keyframes blink {
+            0%{
+                opacity: 0;
+            }
+            50%
+            {
+                opacity: 1;
+            }
+            100%
+            {
+                opacity: 0;
+            }
+        }
+    
